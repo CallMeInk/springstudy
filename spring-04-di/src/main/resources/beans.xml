@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--使用spring来创建对象 在Spring这些都称为bean-->
+    <bean id="student" class="com.kuang.pojo.Student">
+        <property name="name" value="yukai"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>books1</value>
+                <value>books2</value>
+                <value>books3</value>
+            </array>
+        </property>
+        <property name="hobbies">
+            <list>
+                <value>hobby1</value>
+                <value>hobby2</value>
+                <value>hobby3</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="key1" value="card1"/>
+                <entry key="key2" value="card2"/>
+            </map>
+        </property>
+
+        <property name="games">
+            <set>
+                <value>coc</value>
+                <value>bob</value>
+                <value>aoa</value>
+            </set>
+        </property>
+
+        <property name="wife">
+            <null/>
+        </property>
+
+        <property name="info">
+            <props>
+                <prop key="driver">driver</prop>
+                <prop key="url">url</prop>
+                <prop key="name">name</prop>
+                <prop key="password">password</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="address" class="com.kuang.pojo.Address">
+        <property name="address" value="nan yuan"/>
+    </bean>
+
+</beans>
