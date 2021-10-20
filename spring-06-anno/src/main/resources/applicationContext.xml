@@ -13,6 +13,8 @@
 
     <!--开启注解模式-->
     <context:annotation-config/>
+    <!--扫描该package下带注解的class-->
+    <!--注解有四个 功能一样 Controller Repository Component Server-->
     <context:component-scan base-package="com.kuang"/>
 
 </beans>

@@ -12,6 +12,8 @@
         <module name="spring04di" />
         <module name="spring05Autowired" />
         <module name="spring06anno" />
+        <module name="spring07appconfig" />
+        <module name="spring08proxy" />
       </profile>
     </annotationProcessing>
   </component>
