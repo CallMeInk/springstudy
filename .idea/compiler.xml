@@ -14,6 +14,8 @@
         <module name="spring06anno" />
         <module name="spring07appconfig" />
         <module name="spring08proxy" />
+        <module name="spring09aop" />
+        <module name="spring10mybatis" />
       </profile>
     </annotationProcessing>
   </component>
